@@ -1,0 +1,25 @@
+<resources>
+    <!-- Mapped 1:1 from the web app's :root CSS custom properties.
+         Consumed by ui/theme/Color.kt for the Compose ColorScheme —
+         kept here too so the XML splash screen / manifest icon backdrop match exactly. -->
+    <color name="navy">#0B2545</color>
+    <color name="royal">#13315C</color>
+    <color name="blue">#2F6FB0</color>
+    <color name="blue_soft">#5C8FC4</color>
+    <color name="sky">#9BC4E4</color>
+    <color name="ice">#EAF3FC</color>
+    <color name="ice_2">#F5F9FD</color>
+    <color name="paper">#FCFDFF</color>
+    <color name="ink">#10243F</color>
+    <color name="muted">#5D7290</color>
+    <color name="hair">#D3E2F1</color>
+    <color name="credit">#2E7D6B</color>
+    <color name="credit_bg">#E6F3EF</color>
+    <color name="debit">#AD4358</color>
+    <color name="debit_bg">#FBEBEE</color>
+    <color name="amber">#8A6A2F</color>
+    <color name="amber_bg">#F7F0DF</color>
+
+    <color name="splash_background">#EAF3FC</color>
+    <color name="ic_launcher_background">#2F6FB0</color>
+</resources>

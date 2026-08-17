@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base app theme. Actual Material 3 color scheme + typography lives in
+         ui/theme/Theme.kt (Compose) — this XML theme only needs to exist so the
+         Activity has *something* to launch with before Compose takes over, and
+         so the core SplashScreen API has a parent to extend. -->
+    <style name="Theme.ManageYourMoney" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <!-- Edge-to-edge is enforced by the platform on API 36; enableEdgeToEdge()
+             in MainActivity is what actually wires WindowInsets through Compose. -->
+    </style>
+
+    <style name="Theme.ManageYourMoney.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.ManageYourMoney</item>
+    </style>
+
+</resources>

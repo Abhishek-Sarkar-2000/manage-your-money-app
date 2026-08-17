@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Room DB is financial data — include it in auto backup so users don't lose it on device swap. -->
+<full-backup-content>
+    <include domain="database" path="manage_your_money.db" />
+</full-backup-content>
